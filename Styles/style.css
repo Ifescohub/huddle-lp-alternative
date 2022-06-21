@@ -403,6 +403,7 @@ nav{
     grid-row: 1/2;
     justify-content: space-between;
     margin-bottom: 40px;
+    padding-right: 15px;
 }
 
 nav img{
@@ -579,7 +580,7 @@ nav img{
     
     /* CALL TO ACTION SECTION  --------*/
     #CTA{
-        max-width: 24rem;
+        max-width: 75%;
         margin: 0 auto 50px auto;
         font-size: 13px;
         padding: 24px;
