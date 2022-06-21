@@ -432,7 +432,7 @@ a{
     grid-column: 1/2;
     grid-row: 3/4;
     max-width: 75%;
-    Margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 .hero-image img{
     max-width: 100%;
@@ -521,9 +521,9 @@ a{
         height: 1.5rem;
     }
 
-.logo .btn {
-    padding: 13px 40px;
-  }
+    .logo .btn {
+        padding: 13px 40px;
+    }
     
     .hero-description{
         grid-column: 1/2;
@@ -556,9 +556,6 @@ a{
         width: 14rem;
     }
 
-    .service-2{
-
-    }
     .service-2 .s-details{
         padding: 0 30px;
     }
