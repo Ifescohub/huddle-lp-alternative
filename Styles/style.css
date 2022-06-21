@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+:root{
+    --Heading-font: 'Poppins', sans-serif;
+    --Body-CTA: 'Open Sans', sans-serif;
+    --Pink: hsl(322, 100%, 50%);
+    --pink-hover: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body{
+    font-family: var(--Body-CTA);
+    font-weight: 400;  
+}
+
+h1, h2{
+    font-family: var(--Heading-font);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+p{
+    line-height: 1.5;
+}
+
+li{
+    list-style: none;
+    line-height: 3;
+    list-style-position: outside;
+}
+
+a{
+    text-decoration: none;
+    color: var(--Body-CTA)
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border-style: none;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+  }
+
+/* HERO SECTION --------- */
+#hero{
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: var(--Very-Pale-Cyan);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--Very-Dark-Cyan);
+    max-width: 100vw;
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 100px;
+    margin: 0 auto 100px auto;
+    font-size: 15px;
+}
+
+.logo{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.logo img{
+    width: 9rem;
+    height: 2rem;
+}
+
+.logo .btn {
+    color: var(--Very-Dark-Cyan);
+    font-size: 12px;
+    background: white;
+    padding: 13px 50px;
+  }
+  
+  .logo .btn:hover {
+    color: hsla(192, 100%, 9%, 0.6);
+  }
+
+.hero-description{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-right: 60px;
+}
+
+.hero-description h1{
+    font-size: 37px;
+}
+
+.hero-description .btn {
+    color: var(--Very-Pale-Cyan);
+    background: var(--Pink);
+    padding: 13px 37px;
+    font-size: 12px;
+  }
+  
+  .hero-description .btn:hover {
+    background: var(--pink-hover);
+  }
+
+.hero-image{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.hero-image img{
+    max-width: 30rem;
+}
+
+
+/* SERVICES SECTION  ------------*/
+#services{
+    max-width: 55rem;
+    margin: 50px auto 0 auto;
+}
+
+#services img{
+    width: 18rem;
+}
+
+#services p{
+    color: hsla(192, 100%, 9%, 0.8);
+}
+
+[class*="service-"]{
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 var(--Grayish-Blue);
+    align-items: center;
+    padding-right: 10px;
+}
+
+[class*="-details"]{
+    padding:  100px;
+    font-size: 15px;
+}
+
+.service-2{
+    padding-left: 80px;
+    flex-direction: row-reverse;
+}
+
+.service-2 .s-details{
+    padding: 0  10px 0 100px;
+}
+
+
+/* CALL TO ACTION SECTION  --------*/
+#CTA{
+    max-width: 28rem;
+    box-shadow: 0 0 10px 0 var(--Grayish-Blue);
+    background-color: white;
+    margin: 0 auto 50px auto;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 28px;
+    position: relative;
+    z-index: 2;
+    top: 100px
+}
+
+#CTA .btn {
+    color: var(--Very-Pale-Cyan);
+    font-size: 14px;
+    background: var(--Pink);
+    padding: 15px 40px;
+  }
+  
+  #CTA .btn:hover {
+    background: var(--pink-hover);
+  }
+
+
+/* FOOTER SECTION  --------*/
+#widget{
+    max-width: 100%;
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--Very-Pale-Cyan);
+    padding: 100px 30px 15px 30px;
+    font-size: 13px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 5% 33% 15% 15% 27% 5%;
+}
+
+.footer-logo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.footer-logo h1{
+    font-size: 32px;
+}
+
+.about{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.about img{
+    width: 13px;
+    height: 13px;
+    margin: 2px 20px 0 0;
+}
+
+.about p{
+    display: flex;
+}
+
+.about span{
+    padding-right: 30px;
+}
+
+.menu-1{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.menu-2{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.menu a{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.icon{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}   
+
+.copyright{
+    grid-column: 5/6;
+    grid-row: 3/4;
+    font-size: 11px;
+}
+
+.icon ion-icon{
+    border: 1px solid white;
+    border-radius: 100%;
+    font-size: 12px;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.icon ion-icon:hover{
+    color: var(--pink-hover);
+    border-color: var(--pink-hover);
+}
+
+.attribution{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 11px;
+}
+
+.attribution a{
+    text-decoration: underline;
+}
+
+.attribution a:hover { 
+    color: var(--pink-hover);
+}
+
+
+/* ------------------MEDIA QUERIES----------------  */
+@media (max-width: 1080px) {
+    li{
+        line-height: 2.5;
+    }
+    
+    /* HERO SECTION --------- */
+    .hero{
+        padding: 60px 0;
+    } 
+    .logo{
+        margin-bottom: 30px;
+    }
+    
+    .logo img{
+        width: 8rem;
+    }
+    
+    .logo .btn {
+        font-size: 12px;
+    }
+
+    .hero-description{
+        padding-right: 10px;
+        
+    }
+    
+    .hero-description .btn {
+        font-size: 11px;
+      }
+
+    .hero-image img{
+        max-width: 27rem;
+    }
+    
+    /* SERVICES SECTION  ------------*/
+    #services{
+        max-width: 50rem;
+    }
+    
+    #services img{
+        width: 17rem;
+    }
+
+      /* CALL TO ACTION SECTION  --------*/
+      #CTA{
+        max-width: 25rem;
+        padding: 25px;
+        font-size: 14px;
+    }
+    
+    #CTA .btn {
+        font-size: 13px;
+        padding: 12px 35px;
+      }
+    
+    /* FOOTER SECTION  --------*/
+    #widget{
+        font-size: 13px;
+    }
+
+    .footer-logo h1{
+        font-size: 28px;
+    }
+
+    .menu a{
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .about span{
+        padding-right: 0;
+    }
+}
+
+
+@media (max-width: 980px) {
+    .hero-description h1{
+        font-size: 35px;
+    }
+    
+    .hero-description .btn {
+        font-size: 11px;
+      }
+
+    .hero-image img{
+        max-width: 24rem;
+    }
+
+    #widget{
+        padding: 80px 0 15px 0;
+    }
+}
+
+
+@media (max-width: 915px) {
+    /* HERO SECTION --------- */
+#hero{
+    background-image: url(../images/bg-hero-mobile.svg);
+    max-height: max-content;
+    grid-template-columns: 1fr;
+    padding: 60px 30px;
+    margin: 0 auto 100px auto;
+    text-align: center;
+}
+
+.logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.logo img{
+    width: 7rem;
+    height: 1.5rem;
+}
+
+.hero-description{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0 100px 80px 100px;
+}
+
+.hero-description p{
+    font-size: 19px;
+    padding: 0 50px;
+}
+
+.hero-description h1{
+    font-size: 40px;
+}
+
+.hero-description .btn {
+    color: var(--Very-Pale-Cyan);
+    background: var(--Pink);
+    padding: 20px 80px;
+    font-size: 14px;
+  }
+  
+  .hero-description .btn:hover {
+    background: var(--pink-hover);
+  }
+
+.hero-image{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.hero-image img{
+    max-width: 32rem;
+}
+
+/* SERVICES SECTION  ------------*/
+#services{
+    max-width: 43rem;
+    margin: 40px auto 0 auto;
+}
+
+#services img{
+    width: 14rem;
+}
+
+
+[class*="service-"]{
+    max-width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+[class*="-details"]{
+    padding:  60px;
+}
+
+.service-2{
+    padding-left: 60px;  
+}
+
+.service-2 .s-details{
+    padding: 0  10px 0 80px;
+}
+
+/* CALL TO ACTION SECTION  --------*/
+#CTA{
+    max-width: 24rem;
+    margin: 0 auto 50px auto;
+    font-size: 13px;
+    padding: 24px;
+}
+
+#CTA .btn {
+    font-size: 13px;
+    padding: 15px 40px;
+  }
+
+
+/* FOOTER SECTION  --------*/
+#widget{
+    padding: 80px 0 15px 0;
+    font-size: 13px;
+}
+
+.menu a{
+    font-size: 13px;
+} 
+
+.copyright{
+    grid-column: 4/6;
+    grid-row: 3/4;
+    font-size: 10px;
+}
+
+.attribution{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    font-size: 10px;
+}
+
+
+@media (max-width: 720px) {
+    #hero{
+        padding: 60px 30px;
+    }
+    
+    .logo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-bottom: 40px;
+    }
+    
+    .logo img{
+        width: 7rem;
+        height: 1.5rem;
+    }
+    
+    .hero-description{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0 50px 80px 50px;
+    }
+    
+    .hero-description p{
+        font-size: 16px;
+        padding: 0 30px;
+    }
+    
+    .hero-description h1{
+        font-size: 40px;
+    }
+    
+    .hero-description .btn {
+        padding: 18px 50px;
+        font-size: 14px;
+      }
+
+    .hero-image{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .hero-image img{
+        max-width: 25rem;
+    }
+    
+    
+    /* SERVICES SECTION  ------------*/
+    #services{
+        max-width: 22rem;
+        margin: 40px auto 0 auto;
+        text-align: center;
+    }
+    
+    #services img{
+        width: 14rem;
+    }
+
+    .service-2{
+
+    }
+    .service-2 .s-details{
+        padding: 0 30px;
+    }
+    
+    [class*="service-"]{
+        max-width: 100%;
+        height: unset;
+        margin-top: 20px;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+    
+    [class*="-details"]{
+        padding: 10px 20px;
+    }
+    
+    
+    /* CALL TO ACTION SECTION  --------*/
+    #CTA{
+        max-width: 24rem;
+        margin: 0 auto 50px auto;
+        font-size: 13px;
+        padding: 24px;
+    }
+    
+    #CTA .btn {
+        font-size: 13px;
+        padding: 15px 40px;
+      }
+    
+    
+    /* FOOTER SECTION  --------*/
+    #widget{
+        max-width: 100%;
+        background-color: var(--Very-Dark-Cyan);
+        color: var(--Very-Pale-Cyan);
+        padding: 80px  20px 30px 20px;
+        font-size: 13px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+    
+    .footer-logo h1{
+        font-size: 32px;
+        margin-bottom: -8px;
+    }
+    
+    .about{
+        margin-right: 30px;
+    }
+    
+    .about img{
+        width: 15px;
+        height: 15px;
+        margin: 2px 20px 0 0;
+    }
+    
+    .about p{
+        display: flex;
+    }
+    
+    .about span{
+        padding-right: 60px;
+    }
+
+    .menu a{
+        margin-left: -32px;
+        font-size: 15px;
+    }
+
+    .menu-2{
+        margin-top: -20px;
+    }
+    
+    .icon{
+        text-align: center;
+        margin-top: 10px;
+    }   
+    
+    .copyright{
+        text-align: center;
+        font-size: 11px;
+    }
+    
+    .attribution{
+        font-size: 11px;
+        text-align: center;
+    }   
+}
